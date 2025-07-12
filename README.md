@@ -1,4 +1,4 @@
-# flutter_package_onebot
+# PotatoOneBot
 
 一个用于 Flutter 应用的 OneBot WebSocket 客户端库，纯 Dart 实现，方便与 OneBot 服务端进行交互。
 
