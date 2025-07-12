@@ -9,31 +9,6 @@
 - 纯 Dart 实现，无需依赖其他语言 SDK
 - 适合自定义扩展和二次开发
 
-
-## 快速开始
-
-```dart
-import 'package:flutter_package_onebot/flutter_package_onebot.dart';
-
-void main() async {
-  final onebot = await OneBotWebSocket.connect(
-    url: 'ws://your-onebot-server/ws',
-    token: 'your-access-token', // 可选
-  );
-
-  // 发送动作
-  onebot.post(
-    data: Active(
-      action: 'send_message',
-      params: {'user_id': '123456', 'message': 'Hello!'},
-    ),
-  );
-
-  // 关闭连接
-  onebot.close();
-}
-```
-
 ## 注意事项
 
 - 目前仅支持正向 WebSocket 连接，不支持 HTTP。
